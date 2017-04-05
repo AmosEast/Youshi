@@ -15,6 +15,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".DengluActivity" />
+        <activity android:name=".ZhuyeActivity" />
+        <activity android:name=".GerenActivity" />
+        <activity android:name=".XuancanActivity" />
+        <activity android:name=".TuijianActivity" />
+        <activity android:name=".ShezhiActivity"></activity>
     </application>
 
 </manifest>

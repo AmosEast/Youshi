@@ -1,0 +1,73 @@
+﻿<master version="4.5" minAllowVersion="4.5" ID="0E08654F-7F70-4243-AFF0-4C35782E3610">
+  <controls>
+    <control controlID="1816158E-65A0-4142-A49A-61A589F45B5D" controlTypeID="Master" isShow="True" caption="%E6%AF%8D%E7%89%88" x="0" y="0" w="375" h="667" measuredW="0" measuredH="0" zOrder="1" locked="False" sizeLocked="False" masterID="0E08654F-7F70-4243-AFF0-4C35782E3610">
+      <controlProperties>
+        <basic color="4294967295" borderVisible="True" borderColor="4284900966" isAutoSize="False" status="MsEnabled" opacity="1" isCommentCom="False" canMove="True" alias="" rotation="0"/>
+        <states/>
+        <verticalScrollbarShow>False</verticalScrollbarShow>
+        <verticalScrollbarProgress>0</verticalScrollbarProgress>
+        <horizontalScrollbarShow>False</horizontalScrollbarShow>
+        <horizontalScrollbarProgress>0</horizontalScrollbarProgress>
+        <links eventType="AtClick" animate="AmNone" animateAutoDelay="0" animateDuration="500">
+          <link targetPageID="" linkType="ltPageLink" isApplyIncludePage="False" title="%E9%93%BE%E6%8E%A5">
+            <area shape="0" alt="" ID="{FBC068B0-F6DE-4671-99C5-3F6AE11F760A}" coords="(0,0,375,667)"/>
+          </link>
+        </links>
+        <interactiveData>
+          <entry title="">
+            <area shape="0" alt="" ID="{E08D186E-FA9F-453F-BA08-907DF562C502}" coords="(0,0,375,667)"/>
+            <events title=""/>
+          </entry>
+        </interactiveData>
+        <groupChildrenDescriptors>
+          <control controlID="64D5174E-B620-4418-B8AC-549A8D05555A" controlTypeID="StatusBar(IOS)" isShow="True" caption="%E7%8A%B6%E6%80%81%E6%A0%8F(%E8%8B%B9%E6%9E%9C)" x="0" y="0" w="375" h="20" measuredW="342" measuredH="20" zOrder="0" locked="False" sizeLocked="False">
+            <controlProperties>
+              <basic color="4278190080" borderVisible="True" borderColor="4284900966" isAutoSize="False" status="MsEnabled" opacity="1" isCommentCom="False" canMove="True" alias="" rotation="0"/>
+              <states/>
+              <verticalScrollbarShow>False</verticalScrollbarShow>
+              <verticalScrollbarProgress>0</verticalScrollbarProgress>
+              <horizontalScrollbarShow>False</horizontalScrollbarShow>
+              <horizontalScrollbarProgress>0</horizontalScrollbarProgress>
+              <links eventType="AtClick" animate="AmNone" animateAutoDelay="0" animateDuration="500">
+                <link targetPageID="" linkType="ltPageLink" isApplyIncludePage="False" title="%E9%93%BE%E6%8E%A5">
+                  <area shape="0" alt="" ID="{050FCA73-00A9-4F53-92CB-94B1967ED4CE}" coords="(0,0,375,20)"/>
+                </link>
+              </links>
+              <interactiveData>
+                <entry title="">
+                  <area shape="0" alt="" ID="{FE98073B-EA08-46FD-886F-FE7112BAA0F9}" coords="(0,0,375,20)"/>
+                  <events title=""/>
+                </entry>
+              </interactiveData>
+              <ForegroundColor>4294967295</ForegroundColor>
+              <IsAutoTextColor>True</IsAutoTextColor>
+            </controlProperties>
+          </control>
+          <control controlID="31E7CB34-542E-4A7D-9314-BF9D9FE6EA43" controlTypeID="NavigationBar" isShow="True" caption="%E5%AF%BC%E8%88%AA%E6%A0%8F" x="0" y="617" w="375" h="50" measuredW="342" measuredH="46" zOrder="1" locked="False" sizeLocked="False">
+            <controlProperties>
+              <basic color="4278190080" borderVisible="True" borderColor="4284900966" isAutoSize="False" status="MsEnabled" opacity="1" isCommentCom="False" canMove="True" alias="" rotation="0"/>
+              <states/>
+              <verticalScrollbarShow>False</verticalScrollbarShow>
+              <verticalScrollbarProgress>0</verticalScrollbarProgress>
+              <horizontalScrollbarShow>False</horizontalScrollbarShow>
+              <horizontalScrollbarProgress>0</horizontalScrollbarProgress>
+              <links eventType="AtClick" animate="AmNone" animateAutoDelay="0" animateDuration="500">
+                <link targetPageID="" linkType="ltPageLink" isApplyIncludePage="False" title="%E9%93%BE%E6%8E%A5">
+                  <area shape="0" alt="" ID="{9642044B-B3BC-44AB-8241-66E5A46F3F1A}" coords="(0,0,375,50)"/>
+                </link>
+              </links>
+              <interactiveData>
+                <entry title="">
+                  <area shape="0" alt="" ID="{33F7C9E9-6D41-44C0-85D7-4BB245D51494}" coords="(0,0,375,50)"/>
+                  <events title=""/>
+                </entry>
+              </interactiveData>
+              <ForegroundColor>4294967295</ForegroundColor>
+              <IsAutoTextColor>True</IsAutoTextColor>
+            </controlProperties>
+          </control>
+        </groupChildrenDescriptors>
+      </controlProperties>
+    </control>
+  </controls>
+</master>
