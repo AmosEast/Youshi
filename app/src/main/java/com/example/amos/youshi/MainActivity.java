@@ -20,7 +20,11 @@ public class MainActivity extends BaseActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
+<<<<<<< HEAD
                 boolean is_logined = true;
+=======
+                boolean is_logined = false;
+>>>>>>> 1caf6a20dbb485be6d97aa887689ef9a910d17c4
                 //通过sharedPreferences判断是否登录
                 Intent intent = new Intent();
                 if(is_logined) {

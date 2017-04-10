@@ -20,8 +20,12 @@
         <activity android:name=".GerenActivity" />
         <activity android:name=".XuancanActivity" />
         <activity android:name=".TuijianActivity" />
+<<<<<<< HEAD
         <activity android:name=".ShezhiActivity" />
         <activity android:name=".ZhuceActivity"></activity>
+=======
+        <activity android:name=".ShezhiActivity"></activity>
+>>>>>>> 1caf6a20dbb485be6d97aa887689ef9a910d17c4
     </application>
 
 </manifest>

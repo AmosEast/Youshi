@@ -10,4 +10,11 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.amos.youshi.MainActivity">
 
+<<<<<<< HEAD
+=======
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+>>>>>>> 1caf6a20dbb485be6d97aa887689ef9a910d17c4
 </RelativeLayout>
