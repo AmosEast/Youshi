@@ -1,0 +1,59 @@
+﻿<project version="2.2" name="优食" ID="E1A6153F-E93D-43C4-89E7-6815B0818D09">
+  <params>
+    <pageParam version="4.5" minAllowVersion="4.5"/>
+    <projectParam version="2.2" minAllowVersion="2.2" platform="MtMobile" orientation="MoPortrait" mobileScreenScale="1.77777779102325" mobileType="mmtIOS" pageSize="(375,667)" backgroundColor="4292730333" fontSize="0" fontFamily=""/>
+    <previewParam version="1.0"/>
+    <colorParam version="1.0"/>
+  </params>
+  <modules>
+    <page name="首页" ID="F61B23BD-D363-4D4B-83A0-E918070F0852" expanded="True" code="3lafbtyJlJ" thumbCode="3lafbtyJlJ" isLastOpen="True" status="psWhite">
+      <images>
+        <image key="8475D20AB379BE317E4B227F4BFF64F9.svg"/>
+        <image key="92A37C37F1C55861F795B008D0D7225E.svg"/>
+        <image key="D08755C22A9B40B6BF65036DEC8B44B4.svg"/>
+        <image key="DDCF3FD76903519FD712CE9D1716E411.svg"/>
+      </images>
+    </page>
+    <page name="设置" ID="D2F59DCF-A60E-4954-B930-91FC2D5606CD" expanded="True" code="yZBdqNcnJy" thumbCode="yZBdqNcnJy" status="psWhite"/>
+    <page name="个人信息" ID="A1BFE3FA-BDFB-4429-82A7-5A23636A3A6B" expanded="True" code="ziN7wBYg1T" thumbCode="sXzkazVQGI" status="psWhite"/>
+    <page name="加餐" ID="C948F9B5-A4BF-40A6-8CB8-FA67DDA0476B" expanded="True" code="wN8kPajzhh" thumbCode="wN8kPajzhh" status="psWhite">
+      <images>
+        <image key="8475D20AB379BE317E4B227F4BFF64F9.svg"/>
+      </images>
+      <page name="食材列表" ID="F49E9F0A-7778-4403-81BD-DCF678415287" expanded="False" code="yiGy57Yo3U" thumbCode="9L8fmEfPpX" status="psWhite">
+        <page name="肉类列表" ID="78841452-6C34-4B7B-8317-A6CABC725B33" expanded="False" code="NvhTeTGqnj" thumbCode="hAjxF2j1Up" status="psWhite">
+          <page name="弹出页面" ID="85D5B4A3-5436-4914-AD46-00C95A0E1E99" expanded="True" code="AXCa47jnFU" thumbCode="EPncLQThb9" status="psWhite"/>
+        </page>
+        <page name="水果列表" ID="ABF0948B-1847-49A1-9273-69AA6E3A89A9" expanded="True" code="3rc3kdJAAr" thumbCode="xLtWgjfU1A" status="psWhite"/>
+        <page name="蔬菜列表" ID="6C23EF8F-89CF-473D-A04C-00A41F0AFF98" expanded="False" code="DZFeVaVw89" thumbCode="RCMV6E9Imv" status="psWhite"/>
+      </page>
+    </page>
+    <page name="饮食推荐" ID="F572292E-05CB-48C4-807B-456FD3019165" expanded="True" code="ZEbMipuebP" thumbCode="mQPOMYH1N5" status="psWhite">
+      <page name="早餐" ID="7DDF8382-FCDD-4971-8C0B-A55573D77862" expanded="True" code="vOqa2zm6LE" thumbCode="vOqa2zm6LE" status="psWhite"/>
+      <page name="午餐" ID="D62ED24A-D555-4A24-87D2-3125B94ECA01" expanded="True" code="r2vcBCQq6A" thumbCode="r2vcBCQq6A" status="psWhite"/>
+      <page name="晚餐" ID="F04C937B-3214-44C0-A205-A1ED4674459B" expanded="False" code="tramfGwmxu" thumbCode="tramfGwmxu" status="psWhite"/>
+    </page>
+    <page name="登陆" ID="D573AE8B-2129-4C64-8C1A-116FA4BC04A9" expanded="True" code="8B5wo3vmOC" thumbCode="TkJzIhSKMS" status="psWhite"/>
+    <page name="注册" ID="627A7821-8578-4BAD-ADEB-DDF518B97196" expanded="True" code="45K4mSE6zs" thumbCode="MakKZTU6yA" status="psWhite"/>
+  </modules>
+  <masters>
+    <master name="母版1" ID="0E08654F-7F70-4243-AFF0-4C35782E3610" status="psWhite" createDate="2017-04-02 10:31:29">
+      <refPages>
+        <page ID="D2F59DCF-A60E-4954-B930-91FC2D5606CD" refCount="1"/>
+        <page ID="F572292E-05CB-48C4-807B-456FD3019165" refCount="1"/>
+        <page ID="C948F9B5-A4BF-40A6-8CB8-FA67DDA0476B" refCount="1"/>
+      </refPages>
+    </master>
+    <master name="母版2" ID="C9332502-D762-44A3-901C-D471AA35059D" status="psWhite" createDate="2017-04-02 14:57:12">
+      <refPages>
+        <page ID="627A7821-8578-4BAD-ADEB-DDF518B97196" refCount="1"/>
+      </refPages>
+    </master>
+  </masters>
+  <images>
+    <image key="92A37C37F1C55861F795B008D0D7225E.svg"/>
+    <image key="DDCF3FD76903519FD712CE9D1716E411.svg"/>
+    <image key="D08755C22A9B40B6BF65036DEC8B44B4.svg"/>
+    <image key="8475D20AB379BE317E4B227F4BFF64F9.svg"/>
+  </images>
+</project>
