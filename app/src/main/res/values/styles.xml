@@ -1,11 +1,36 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+
+        <!--<item name="actionBarStyle">@style/myActionBar</item>-->
+        <!-- ActionBar的背景色 -->
+        <item name="colorPrimary">@color/actionBarBackgroundColor</item>
+        <!--&lt;!&ndash; 状态栏的背景色 &ndash;&gt;-->
+        <item name="colorPrimaryDark">@color/statusBarColor</item>
+        <!--&lt;!&ndash; ActionBar上字体的前景色 &ndash;&gt;-->
+        <item name="android:textColorPrimary">@color/white</item>
+        <!--&lt;!&ndash; 整个窗口的背景色 &ndash;&gt;-->
+        <item name="android:windowBackground">@color/white</item>
+        <!--&lt;!&ndash; 窗口中字体的颜色 &ndash;&gt;-->
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- actionBar的样式 -->
+    <style name="myActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/actionBarBackgroundColor</item>
+        <item name="android:backgroundStacked">@color/white</item>
+        <item name="android:titleTextStyle">@style/actionBarTitle</item>
+    </style>
+
+    <!-- actionBarTitle的样式 -->
+    <style name="actionBarTitle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
     </style>
 
 </resources>

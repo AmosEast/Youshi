@@ -20,7 +20,8 @@
         <activity android:name=".GerenActivity" />
         <activity android:name=".XuancanActivity" />
         <activity android:name=".TuijianActivity" />
-        <activity android:name=".ShezhiActivity"></activity>
+        <activity android:name=".ShezhiActivity" />
+        <activity android:name=".ZhuceActivity" />
     </application>
 
 </manifest>

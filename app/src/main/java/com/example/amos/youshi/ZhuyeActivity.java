@@ -2,6 +2,7 @@ package com.example.amos.youshi;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
 
 /**
  * 该activity作为APP的主页面
@@ -14,4 +15,5 @@ public class ZhuyeActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_zhuye);
     }
+
 }

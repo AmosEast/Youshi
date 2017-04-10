@@ -2,18 +2,16 @@ package com.example.amos.youshi;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
 
 /**
- * 此界面为个人信息界面
+ * 该界面为注册界面
  */
 
-public class GerenActivity extends BaseActivity {
+public class ZhuceActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_geren);
+        setContentView(R.layout.activity_zhuce);
     }
-
 }

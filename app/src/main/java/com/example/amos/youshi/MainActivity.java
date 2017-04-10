@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
 
 /**
  * 该activity作为加载页的activity
@@ -14,17 +15,19 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
 
         Handler handler = new Handler(); //当计时结束时，跳转至主界面
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                boolean is_logined = false;
+                boolean is_logined = true;
                 //通过sharedPreferences判断是否登录
                 Intent intent = new Intent();
                 if(is_logined) {
-                    intent.setClass(MainActivity.this, ZhuyeActivity.class);
+//                    intent.setClass(MainActivity.this, ZhuyeActivity.class);
+                    intent.setClass(MainActivity.this, XuancanActivity.class);
                 } else {
                     intent.setClass(MainActivity.this, DengluActivity.class);
                 }
@@ -48,5 +51,10 @@ public class MainActivity extends BaseActivity {
 //             }
 //        }).start();
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        return true;
     }
 }
