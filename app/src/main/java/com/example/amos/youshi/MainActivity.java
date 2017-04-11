@@ -31,7 +31,8 @@ public class MainActivity extends BaseActivity {
 //                    intent.setClass(MainActivity.this, ZhuceActivity.class);
 //                    intent.setClass(MainActivity.this, GerenActivity.class);
 //                    intent.setClass(MainActivity.this, DengluActivity.class);
-                    intent.setClass(MainActivity.this, TuijianActivity.class);
+//                    intent.setClass(MainActivity.this, TuijianActivity.class);
+                    intent.setClass(MainActivity.this, ZhuyeActivity.class);
                 } else {
                     intent.setClass(MainActivity.this, DengluActivity.class);
                 }
