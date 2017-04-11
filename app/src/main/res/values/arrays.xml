@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="changes">
+        <item>增肌</item>
+        <item>减脂 </item>
+        <item>正常</item>
+    </string-array>
+</resources>

@@ -26,11 +26,12 @@ public class MainActivity extends BaseActivity {
                 //通过sharedPreferences判断是否登录
                 Intent intent = new Intent();
                 if(is_logined) {
-                    intent.setClass(MainActivity.this, ZhuyeActivity.class);
+//                    intent.setClass(MainActivity.this, ZhuyeActivity.class);
 //                    intent.setClass(MainActivity.this, XuancanActivity.class);
 //                    intent.setClass(MainActivity.this, ZhuceActivity.class);
 //                    intent.setClass(MainActivity.this, GerenActivity.class);
 //                    intent.setClass(MainActivity.this, DengluActivity.class);
+                    intent.setClass(MainActivity.this, TuijianActivity.class);
                 } else {
                     intent.setClass(MainActivity.this, DengluActivity.class);
                 }
