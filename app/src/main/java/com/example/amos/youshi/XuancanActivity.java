@@ -102,16 +102,7 @@ public class XuancanActivity extends BaseActivity {
 
 
 
-        //```````````````````````````````````
-        //这去改，试试，下面两个参数换成想要的
-        Calendar calendar = Calendar.getInstance();
-        new TimePickerDialog(this, new TimePickerDialog.OnTimeSetListener() {
 
-            @Override
-            public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-
-            }
-        },calendar.get(Calendar.AM),calendar.get(Calendar.AM),true).show();
 
     }
 }
