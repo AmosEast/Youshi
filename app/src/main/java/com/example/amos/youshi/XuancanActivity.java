@@ -53,10 +53,9 @@ public class XuancanActivity extends BaseActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 XItem xItem = xItemList.get(position);
-                //customView();
+                customView();
             }
         });
-
 
     }
 
@@ -85,24 +84,17 @@ public class XuancanActivity extends BaseActivity {
      */
     @RequiresApi(api = Build.VERSION_CODES.N)
     public void customView() {
-        TableLayout quality_picker = (TableLayout) getLayoutInflater().inflate(R.layout.quality_picker, null);
-        new AlertDialog.Builder(this).setView(quality_picker)
-          .setPositiveButton("确定", new DialogInterface.OnClickListener(){
-              @Override
-              public void onClick(DialogInterface dialog, int which) {
-                  //执行确定事件
-              }
-
-        }).setNeutralButton("取消", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                //执行取消事件
-            }
-        }).create().show();
-
-
-
-
-
+        new NumberPickerDialog(this,
+                new NumberPicker.OnValueChangeListener() {
+                    @Override
+                    public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
+//                        Log.e("ard", "所选值：" + picker.getValue() + "，原值：" + oldVal + "，新值：" + newVal); // 新值即所选值
+                    }
+                },
+                90, // 最大值
+                20, // 最小值
+                40) // 默认值
+                .setCurrentValue(55) // 更新默认值
+                .show();
     }
 }
