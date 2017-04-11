@@ -44,7 +44,7 @@ public class XuancanActivity extends BaseActivity {
         recyclerView.setAdapter(xuancanTypeAdapter);
 
         //初始化选餐链表
-        initXItems();//初始化数据
+        initXItems();
         XuanchanAdapter adapter = new XuanchanAdapter(XuancanActivity.this, R.layout.xuancan_item, xItemList);
         ListView listView = (ListView) findViewById(R.id.view_list);
         listView.setAdapter(adapter);
@@ -91,7 +91,7 @@ public class XuancanActivity extends BaseActivity {
 //                        Log.e("ard", "所选值：" + picker.getValue() + "，原值：" + oldVal + "，新值：" + newVal); // 新值即所选值
                     }
                 },
-                90, // 最大值
+                3000, // 最大值
                 20, // 最小值
                 40) // 默认值
                 .setCurrentValue(55) // 更新默认值

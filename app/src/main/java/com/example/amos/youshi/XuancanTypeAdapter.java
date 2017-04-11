@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.lang.reflect.Array;
 import java.util.List;
@@ -22,11 +23,13 @@ public class XuancanTypeAdapter extends RecyclerView.Adapter<XuancanTypeAdapter.
     private List<XOpt> xOptList;
 
     static class ViewHolder extends RecyclerView.ViewHolder {
+        View opt_view;
         ImageView opt_image;
         TextView opt_name;
 
         public ViewHolder(View view) {
             super(view);
+            opt_view = view;
             opt_image = (ImageView) view.findViewById(R.id.opt_image);
             opt_name = (TextView) view.findViewById(R.id.opt_name);
         }
@@ -39,7 +42,23 @@ public class XuancanTypeAdapter extends RecyclerView.Adapter<XuancanTypeAdapter.
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler_item, parent, false);
-        ViewHolder holder = new ViewHolder(view);
+        final ViewHolder holder = new ViewHolder(view);
+        holder.opt_view.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                int position = holder.getAdapterPosition();
+                XOpt xOpt = xOptList.get(position);
+                Toast.makeText(v.getContext(), "You clicked view" + xOpt.getOpt_name(), Toast.LENGTH_SHORT).show();
+            }
+        });
+        holder.opt_image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int postion = holder.getAdapterPosition();
+                XOpt xOpt = xOptList.get(postion);
+                Toast.makeText(v.getContext(), "You clicked view" + xOpt.getOpt_name(), Toast.LENGTH_SHORT).show();
+            }
+        });
         return holder;
     }
 
@@ -51,6 +70,9 @@ public class XuancanTypeAdapter extends RecyclerView.Adapter<XuancanTypeAdapter.
     }
 
     public int getItemCount() {
+
         return xOptList.size();
     }
+
+
 }
