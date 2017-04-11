@@ -26,8 +26,11 @@ public class MainActivity extends BaseActivity {
                 //通过sharedPreferences判断是否登录
                 Intent intent = new Intent();
                 if(is_logined) {
-//                    intent.setClass(MainActivity.this, ZhuyeActivity.class);
-                    intent.setClass(MainActivity.this, XuancanActivity.class);
+                    intent.setClass(MainActivity.this, ZhuyeActivity.class);
+//                    intent.setClass(MainActivity.this, XuancanActivity.class);
+//                    intent.setClass(MainActivity.this, ZhuceActivity.class);
+//                    intent.setClass(MainActivity.this, GerenActivity.class);
+//                    intent.setClass(MainActivity.this, DengluActivity.class);
                 } else {
                     intent.setClass(MainActivity.this, DengluActivity.class);
                 }
@@ -36,20 +39,6 @@ public class MainActivity extends BaseActivity {
                 MainActivity.this.finish();
             }
         }, 3000); //持续时间为3秒
-
-
-//        new Thread(new Runnable() { //开启子线程，后台处理耗时任务
-//             public void run() {
-//                 /* 这里运行耗时任务，比如加载网络数据 */
-//                 runOnUiThread(new Runnable() { //返回主线程（UI线程）
-//                      public void run() {
-//                          Intent intent = new Intent(MainActivity.this, MainActivity.class);
-//                          startActivity(intent); //跳转至 MainActivity
-//                          MainActivity.this.finish(); //结束当前的 Activity
-//                      }
-//                 });
-//             }
-//        }).start();
 
     }
 
