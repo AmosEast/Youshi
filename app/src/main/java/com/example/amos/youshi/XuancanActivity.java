@@ -40,6 +40,7 @@ public class XuancanActivity extends BaseActivity {
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         recyclerView.setLayoutManager(layoutManager);
+        
 //        recyclerView.setOnClickListener(new AdapterView.OnItemClickListener() {
 //            @Override
 //            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -63,6 +64,9 @@ public class XuancanActivity extends BaseActivity {
                 customView();
             }
         });
+
+        //设置返回点击监听事件
+        super.ret_clicked(this);
 
     }
 

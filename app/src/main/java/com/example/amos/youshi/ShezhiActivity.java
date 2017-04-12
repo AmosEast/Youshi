@@ -20,7 +20,12 @@ public class ShezhiActivity extends BaseActivity {
         );
         ListView listView=(ListView)findViewById(R.id.list1);
         listView.setAdapter(adapter);
+
+        //设置返回点击监听事件
+        super.ret_clicked(this);
     }
+
+
 
 }
 

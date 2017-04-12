@@ -38,6 +38,9 @@ public class TuijianActivity extends BaseActivity {
         ListView listView = (ListView) findViewById(R.id.shiwu);
         listView.setAdapter(adapter);
 
+        //设置返回点击监听事件
+        super.ret_clicked(this);
+
 
 
 

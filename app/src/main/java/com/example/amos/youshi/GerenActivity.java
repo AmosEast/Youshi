@@ -28,6 +28,9 @@ public class GerenActivity extends BaseActivity {
                 startActivity(intent);
             }
         });
+
+        //设置返回点击监听事件
+//        super.ret_clicked(this);
     }
 
 }

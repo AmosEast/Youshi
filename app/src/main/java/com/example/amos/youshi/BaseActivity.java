@@ -13,7 +13,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import java.util.List;
+
 public class BaseActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,9 +24,14 @@ public class BaseActivity extends AppCompatActivity {
 
     }
 
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        getMenuInflater().inflate(R.menu.zhuye, menu);
-//        return true;
-//    }
+    protected void ret_clicked(final BaseActivity baseActivity) {
+        ImageButton ret_btn = (ImageButton) findViewById(R.id.ret_btn);
+        final Intent intent = new Intent();
+        ret_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                baseActivity.finish();
+            }
+        });
+    }
 }
