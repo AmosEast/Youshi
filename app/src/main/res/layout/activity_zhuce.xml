@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:paddingBottom="@dimen/activity_vertical_margin"
-android:paddingLeft="@dimen/activity_horizontal_margin"
-android:paddingRight="@dimen/activity_horizontal_margin"
-android:paddingTop="@dimen/activity_vertical_margin"
-android:weightSum="1"
-android:background="#ededed">
-
-
-
-
-/>
-
-<ImageView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="1"
+    android:background="#ededed">
+    <ImageView
         android:id="@+id/logo_img"
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -24,58 +18,80 @@ android:background="#ededed">
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-<EditText
-    android:drawableLeft="@android:drawable/ic_lock_idle_lock"
-    android:layout_width="wrap_content"
-    android:layout_height="48dp"
-    android:inputType="textPersonName"
-    android:ems="10"
-    android:id="@+id/resetpwd_edit_name"
-    android:hint="请输入您的用户名"
-    android:layout_below="@id/logo_img"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentStart="true" />
+
+
+
+
+    />
+
+
+    <EditText
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/resetpwd_edit_name"
+        android:hint="请输入您的用户名"
+        android:textColorHint="#aaaaaa"
+        android:background="#ffffff"
+        android:textSize="24sp"
+        android:layout_below="@id/logo_img"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 
 
 
 
-<EditText
-    android:drawableLeft="@android:drawable/ic_lock_idle_lock"
-    android:layout_width="fill_parent"
-    android:layout_height="48dp"
-    android:inputType="textPassword"
-    android:ems="10"
-    android:id="@+id/resetpwd_edit_pwd_old"
-    android:hint="请输入您的密码"
-    android:layout_below="@+id/resetpwd_edit_name"
-    android:layout_alignRight="@+id/resetpwd_edit_name"
-    android:layout_alignEnd="@+id/resetpwd_edit_name"
-    android:layout_alignLeft="@+id/resetpwd_edit_name"
-    android:layout_alignStart="@+id/resetpwd_edit_name" />
+    <EditText
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/resetpwd_edit_pwd_old"
+        android:hint="请输入您的密码"
+        android:textColorHint="#aaaaaa"
+        android:background="#ffffff"
+        android:textSize="24sp"
+        android:layout_below="@+id/resetpwd_edit_name"
+        android:layout_alignLeft="@+id/resetpwd_edit_name"
+        android:layout_alignStart="@+id/resetpwd_edit_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
-<EditText
-    android:drawableLeft="@android:drawable/ic_lock_idle_lock"
-    android:layout_width="fill_parent"
-    android:layout_height="48dp"
-    android:inputType="textPassword"
-    android:ems="10"
-    android:id="@+id/resetpwd_edit_pwd_new"
-    android:layout_below="@+id/resetpwd_edit_pwd_old"
-    android:layout_centerHorizontal="true"
-    android:hint="请确认您的密码" />
+    <EditText
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/resetpwd_edit_pwd_new"
+        android:layout_centerHorizontal="true"
+        android:hint="请确认您的密码"
+        android:textColorHint="#aaaaaa"
+        android:textSize="24sp"
+        android:background="#ffffff"
+        android:layout_below="@+id/resetpwd_edit_pwd_old" />
 
-<Button
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:text="注册"
-    android:id="@+id/register_btn_sure"
-    android:textSize="20dp"
-    android:background="#8bd2d8"
-    android:layout_below="@+id/resetpwd_edit_pwd_new"
-    android:layout_alignLeft="@+id/resetpwd_edit_pwd_new"
-    android:layout_alignStart="@+id/resetpwd_edit_pwd_new"
-    android:layout_marginTop="20dp" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="注 册"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:id="@+id/sign_up_zhuce"
+        android:background="#8bd2d8"
+        android:layout_below="@+id/resetpwd_edit_pwd_new"
+        android:layout_alignLeft="@+id/resetpwd_edit_pwd_new"
+        android:layout_alignStart="@+id/resetpwd_edit_pwd_new"
+        android:layout_marginTop="8dp" />
 
 
 

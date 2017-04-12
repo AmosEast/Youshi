@@ -1,34 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ret_head"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:baselineAligned="false"
-    android:weightSum="1">
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
 
-    <Button
-        android:text="返回"
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="top"
-        android:id="@+id/button" />
+        app:srcCompat="@android:drawable/ic_media_rew"
+        android:id="@+id/ret_btn"
+        android:layout_weight="1" />
 
     <TextView
-        android:text="饮食推荐"
-        android:layout_width="184dp"
-        android:layout_gravity="top"
-        android:layout_height="46dp"
-        android:textSize="18sp"
-        android:textColor="#666666"
-        android:id="@+id/tuijian"
-        android:textStyle="normal|bold"
-        android:textAlignment="center" />
-
-    <Button
-        android:text="设置"
+        android:text="优食"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/set"
-        android:layout_weight="1" />
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:id="@+id/textView"
+        android:layout_weight="4"
+        android:textSize="30dp"/>
 
 </LinearLayout>

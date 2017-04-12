@@ -7,7 +7,7 @@ xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     tools:context="com.example.amos.youshi.XuancanActivity"
     android:weightSum="1">
-    <include layout="@layout/head" ></include>
+    <include layout="@layout/title" ></include>
     <SearchView
         android:id="@+id/view_search"
         android:layout_width="match_parent"

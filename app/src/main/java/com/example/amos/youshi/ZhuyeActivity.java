@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
@@ -74,6 +75,29 @@ public class ZhuyeActivity extends BaseActivity {
                 startActivity(intent);
             }
         });
+
+        //监听设置按钮
+        ImageButton set_btn = (ImageButton) findViewById(R.id.set_btn);
+        set_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final Intent intent = new Intent();
+                intent.setClass(ZhuyeActivity.this, ShezhiActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        //监听个人按钮
+        ImageButton geren_btn = (ImageButton) findViewById(R.id.geren_btn);
+        geren_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final Intent intent = new Intent();
+                intent.setClass(ZhuyeActivity.this, GerenActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
 }

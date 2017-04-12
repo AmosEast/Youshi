@@ -75,4 +75,6 @@ public class XuancanTypeAdapter extends RecyclerView.Adapter<XuancanTypeAdapter.
     }
 
 
+
+
 }

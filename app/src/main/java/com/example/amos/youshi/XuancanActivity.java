@@ -40,6 +40,13 @@ public class XuancanActivity extends BaseActivity {
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         recyclerView.setLayoutManager(layoutManager);
+//        recyclerView.setOnClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                XOpt xOpt = xOptList.get(position);
+//
+//            }
+//        });
         XuancanTypeAdapter xuancanTypeAdapter = new XuancanTypeAdapter(xOptList);
         recyclerView.setAdapter(xuancanTypeAdapter);
 

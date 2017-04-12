@@ -43,29 +43,29 @@ public class TuijianActivity extends BaseActivity {
 
 
 
-        Button button = (Button) findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //Intent是一种运行时绑定（run-time binding）机制，它能在程序运行过程中连接两个不同的组件。
-
-                //page1为先前已添加的类，并已在AndroidManifest.xml内添加活动事件(<activity android:name="page1"></activity>),在存放资源代码的文件夹下下，
-                //Intent i = new Intent(tuijian.this , set.class);
-                // startActivity(i);
-            }
-        });
-        Button set = (Button) findViewById(R.id.set);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //Intent是一种运行时绑定（run-time binding）机制，它能在程序运行过程中连接两个不同的组件。
-
-                //page1为先前已添加的类，并已在AndroidManifest.xml内添加活动事件(<activity android:name="page1"></activity>),在存放资源代码的文件夹下下，
-                //Intent i = new Intent(tuijian.this , set.class);
-                // startActivity(i);
-
-            }
-        });
+//        Button button = (Button) findViewById(R.id.button);
+//        button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                //Intent是一种运行时绑定（run-time binding）机制，它能在程序运行过程中连接两个不同的组件。
+//
+//                //page1为先前已添加的类，并已在AndroidManifest.xml内添加活动事件(<activity android:name="page1"></activity>),在存放资源代码的文件夹下下，
+//                //Intent i = new Intent(tuijian.this , set.class);
+//                // startActivity(i);
+//            }
+//        });
+//        Button set = (Button) findViewById(R.id.set);
+//        button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                //Intent是一种运行时绑定（run-time binding）机制，它能在程序运行过程中连接两个不同的组件。
+//
+//                //page1为先前已添加的类，并已在AndroidManifest.xml内添加活动事件(<activity android:name="page1"></activity>),在存放资源代码的文件夹下下，
+//                //Intent i = new Intent(tuijian.this , set.class);
+//                // startActivity(i);
+//
+//            }
+//        });
     }
     private void initShiwus(){
         for(int i=0;i<3;i++){
