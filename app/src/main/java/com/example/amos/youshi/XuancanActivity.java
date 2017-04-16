@@ -40,20 +40,12 @@ public class XuancanActivity extends BaseActivity {
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         recyclerView.setLayoutManager(layoutManager);
-        
-//        recyclerView.setOnClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                XOpt xOpt = xOptList.get(position);
-//
-//            }
-//        });
-        XuancanTypeAdapter xuancanTypeAdapter = new XuancanTypeAdapter(xOptList);
+        final XuancanTypeAdapter xuancanTypeAdapter = new XuancanTypeAdapter(xOptList);
         recyclerView.setAdapter(xuancanTypeAdapter);
 
         //初始化选餐链表
-        initXItems();
-        XuanchanAdapter adapter = new XuanchanAdapter(XuancanActivity.this, R.layout.xuancan_item, xItemList);
+        initXItems("");
+        final XuanchanAdapter adapter = new XuanchanAdapter(XuancanActivity.this, R.layout.xuancan_item, xItemList);
         ListView listView = (ListView) findViewById(R.id.view_list);
         listView.setAdapter(adapter);
         //监听点击事件
@@ -62,6 +54,17 @@ public class XuancanActivity extends BaseActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 XItem xItem = xItemList.get(position);
                 customView();
+            }
+        });
+
+        //recyclerView的点击事件
+
+        xuancanTypeAdapter.setOnItemClickListener(new XuancanTypeAdapter.OnRecyclerViewItemClickListener() {
+            @Override
+            public void onItemClick(View view, String data) {
+                adapter.clear();
+                initXItems(data);
+                adapter.notifyDataSetChanged();
             }
         });
 
@@ -83,9 +86,10 @@ public class XuancanActivity extends BaseActivity {
     /**
      * 初始化选项链表数据
      */
-    private void initXItems() {
+    private void initXItems(String item) {
+//        xItemList.clear();
         for(int i = 0; i < 20; i++) {
-            XItem xItem = new XItem("itme_" , "item_8" );
+            XItem xItem = new XItem(item + "itme_" , item + "item_8" );
             xItemList.add(xItem);
         }
     }
