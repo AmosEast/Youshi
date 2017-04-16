@@ -77,10 +77,15 @@ public class XuancanActivity extends BaseActivity {
      * 初始化选项链表
      */
     private void initXOpts() {
-        for(int i = 0; i < 5; i++) {
-            XOpt xOpt = new XOpt("水果", R.drawable.apple_pic);
-            xOptList.add(xOpt);
-        }
+
+        XOpt xOpt = new XOpt("肉类", R.drawable.pic_1);
+        xOptList.add(xOpt);
+        xOpt = new XOpt("蔬菜", R.drawable.pic_2);
+        xOptList.add(xOpt);
+        xOpt = new XOpt("水果", R.drawable.pic_3);
+        xOptList.add(xOpt);
+        xOpt = new XOpt("零食", R.drawable.pic_4);
+        xOptList.add(xOpt);
     }
 
     /**

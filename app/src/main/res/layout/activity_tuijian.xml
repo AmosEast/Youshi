@@ -1,73 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:id="@+id/activity_tuijian"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:layout_centerVertical="true"
-tools:context="com.example.amos.youshi.TuijianActivity"
-android:weightSum="1"
-android:orientation="vertical">
-
-<include layout="@layout/title"
-    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tuijian"
     android:layout_width="match_parent"
-    android:visibility="visible" />
-
-
-<LinearLayout
-    android:orientation="horizontal"
-    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_below="@+id/linearLayout"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentStart="true"
-    android:layout_marginLeft="15dp"
-    android:layout_marginStart="15dp"
-    android:layout_marginTop="32dp"
+    android:layout_centerVertical="true"
+    tools:context="com.example.amos.youshi.TuijianActivity"
     android:weightSum="1"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentEnd="true">
+    android:orientation="vertical"
+    android:background="#ededed">
 
-    <Button
-        android:text="早餐"
-        android:layout_width="72dp"
+    <include layout="@layout/title"
         android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:textColor="#666666"
-        android:id="@+id/zaocan" />
+        android:layout_width="match_parent"
+        android:visibility="visible" />
 
-    <Button
-        android:text="午餐"
-        android:layout_width="64dp"
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:textColor="#666666"
-        android:id="@+id/wucan" />
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="26sp"
+        android:layout_marginStart="26sp"
+        android:layout_marginTop="32dp"
+        android:weightSum="1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
 
-    <Button
-        android:text="晚餐"
-        android:layout_width="65dp"
-        android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:textColor="#666666"
-        android:id="@+id/wancan" />
+        <Button
+            android:text="早餐"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:background="#ffffff"
+            android:textColor="#666666"
+            android:id="@+id/zaocan" />
 
-    <Spinner
-        android:layout_width="77dp"
-        android:layout_height="37dp"
-        android:id="@+id/spinner"
-        android:entries="@array/changes"
-        android:popupBackground="@android:color/background_light"
-        android:background="@drawable/moshi" />
+        <Button
+            android:text="午餐"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:background="#ffffff"
+            android:textColor="#666666"
+            android:id="@+id/wucan" />
 
-</LinearLayout>
+        <Button
+            android:text="晚餐"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:background="#ffffff"
+            android:id="@+id/wancan" />
 
-<ListView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/shiwu" />
+        <Spinner
+            android:layout_width="77dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="24dp"
+            android:id="@+id/spinner"
+            android:entries="@array/changes"
+            android:popupBackground="@android:color/background_light"
+            android:background="@drawable/moshi" />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/shiwu" />
 
 
 </LinearLayout>

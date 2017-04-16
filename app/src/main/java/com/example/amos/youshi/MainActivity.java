@@ -1,6 +1,7 @@
 package com.example.amos.youshi;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,6 +13,7 @@ import android.view.Menu;
 
 public class MainActivity extends BaseActivity {
 
+    //private SharedPreferences editor;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,20 +24,28 @@ public class MainActivity extends BaseActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                boolean is_logined = false;
-                //通过sharedPreferences判断是否登录
+                boolean is_denglu = false;
+                //boolean is_denglu = editor.getBoolean("denglu",false);
                 Intent intent = new Intent();
-                if(is_logined) {
+                if(is_denglu) {
                     intent.setClass(MainActivity.this, ZhuyeActivity.class);
-//                    intent.setClass(MainActivity.this, XuancanActivity.class);
-//                    intent.setClass(MainActivity.this, ZhuceActivity.class);
-//                    intent.setClass(MainActivity.this, GerenActivity.class);
-//                    intent.setClass(MainActivity.this, DengluActivity.class);
-//                    intent.setClass(MainActivity.this, TuijianActivity.class);
-//                    intent.setClass(MainActivity.this, ZhuyeActivity.class);
-                } else {
+                }else {
                     intent.setClass(MainActivity.this, DengluActivity.class);
                 }
+//                boolean is_logined = false;
+//                //通过sharedPreferences判断是否登录
+//                Intent intent = new Intent();
+//                if(is_logined) {
+//                    intent.setClass(MainActivity.this, ZhuyeActivity.class);
+////                    intent.setClass(MainActivity.this, XuancanActivity.class);
+////                    intent.setClass(MainActivity.this, ZhuceActivity.class);
+////                    intent.setClass(MainActivity.this, GerenActivity.class);
+////                    intent.setClass(MainActivity.this, DengluActivity.class);
+////                    intent.setClass(MainActivity.this, TuijianActivity.class);
+////                    intent.setClass(MainActivity.this, ZhuyeActivity.class);
+//                } else {
+//                    intent.setClass(MainActivity.this, DengluActivity.class);
+//                }
                 startActivity(intent);
 
                 MainActivity.this.finish();

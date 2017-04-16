@@ -9,25 +9,28 @@
     android:orientation="horizontal">
 
     <ImageButton
-        android:layout_width="wrap_content"
+        android:layout_width="32dp"
         android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/ic_menu_myplaces"
+        app:srcCompat="@drawable/gerenxinxi"
+        android:background="#ffffff"
         android:id="@+id/geren_btn"
         android:layout_weight="1" />
 
     <TextView
-        android:text="优食"
+        android:text="优 食"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:gravity="center"
         android:id="@+id/textView"
+        android:background="#ffffff"
         android:layout_weight="3"
         android:textSize="30dp"/>
 
     <ImageButton
-        android:layout_width="wrap_content"
+        android:layout_width="32dp"
         android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/ic_menu_preferences"
+        app:srcCompat="@drawable/shezhi"
+        android:background="#ffffff"
         android:id="@+id/set_btn"
         android:layout_weight="1" />
 </LinearLayout>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:id="@+id/activity_xuancan"
     android:layout_width="match_parent"
@@ -8,11 +8,19 @@ xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.amos.youshi.XuancanActivity"
     android:weightSum="1">
     <include layout="@layout/title" ></include>
-    <SearchView
-        android:id="@+id/view_search"
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"></SearchView>
+        android:layout_height="wrap_content">
+
+        <SearchView
+            android:id="@+id/view_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        </SearchView>
+    </RelativeLayout>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view"
@@ -23,6 +31,9 @@ xmlns:tools="http://schemas.android.com/tools"
     <ListView android:id="@+id/view_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:minHeight="42dp"
+        android:divider="#F7F7F7"
+        android:dividerHeight="2dp"
         />
 
 
