@@ -23,10 +23,14 @@ package com.example.amos.youshi;
         import android.content.Context;
         import android.content.DialogInterface;
         import android.content.DialogInterface.OnClickListener;
+        import android.content.SharedPreferences;
         import android.os.Bundle;
         import android.view.LayoutInflater;
         import android.view.View;
         import android.widget.NumberPicker;
+        import android.widget.Toast;
+
+        import static android.content.Context.MODE_PRIVATE;
 
 /**
  * A dialog that prompts the user for the number using a NumberPicker.<br/>
@@ -43,6 +47,9 @@ public class NumberPickerDialog extends AlertDialog implements OnClickListener, 
 
     private int newVal;
     private int oldVal;
+    private float cur_shiwu_cal;
+
+    Context a;
 
     /**
      * @param context 上下文
@@ -51,8 +58,11 @@ public class NumberPickerDialog extends AlertDialog implements OnClickListener, 
      * @param minValueNumber 最小值
      * @param currentValueNumber 当前值
      */
-    public NumberPickerDialog(Context context, NumberPicker.OnValueChangeListener callBack, int maxValueNumber, int minValueNumber, int currentValueNumber) {
+    public NumberPickerDialog(Context context, NumberPicker.OnValueChangeListener callBack, int maxValueNumber, int minValueNumber, int currentValueNumber, float cur_cal) {
         super(context, 0);
+        a = context;
+
+        cur_shiwu_cal = cur_cal;
 
         mCallback = callBack;
 
@@ -98,6 +108,16 @@ public class NumberPickerDialog extends AlertDialog implements OnClickListener, 
     public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
         this.oldVal = oldVal;
         this.newVal = newVal;
+
+        //将更新后的已吃了的卡路里数写入 used 里面
+        SharedPreferences editor = a.getSharedPreferences("data", MODE_PRIVATE);
+        float used = editor.getFloat("used", 0);
+        float temp = newVal * cur_shiwu_cal / 100 + used;
+        SharedPreferences.Editor editor_w;
+        editor_w = a.getSharedPreferences("data", MODE_PRIVATE).edit();
+        editor_w.putFloat("used", temp);
+        editor_w.apply();
+
     }
 
     @Override
@@ -117,7 +137,10 @@ public class NumberPickerDialog extends AlertDialog implements OnClickListener, 
     public NumberPickerDialog setCurrentValue(int value){
 
         mNumberPicker.setValue(value);
-
         return this;
+    }
+
+    public int getNewVal() {
+        return newVal;
     }
 }

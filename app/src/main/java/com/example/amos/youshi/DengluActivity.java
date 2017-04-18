@@ -42,7 +42,7 @@ public class DengluActivity extends BaseActivity {
         sign_in.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                String url = "http://10.15.4.25/youshi/SignInController.php" ;
+                String url = base_url + "/youshi/SignInController.php" ;
                 //获得登录的用户名和密码
                 EditText denglu_account = (EditText) findViewById(R.id.denglu_account);
                 EditText denglu_passwd = (EditText) findViewById(R.id.denglu_passwd);
@@ -72,9 +72,9 @@ public class DengluActivity extends BaseActivity {
             int a = Integer.parseInt(jsonObject.getString("res"));
             if(a == 1) {
                 //登录成功
-                //SharedPreferences.Editor editor = getSharedPreferences("data", MODE_PRIVATE).edit();
-                //editor.putBoolean("denglu", true);
-                //editor.apply();
+                SharedPreferences.Editor editor = getSharedPreferences("data", MODE_PRIVATE).edit();
+                editor.putBoolean("denglu", true);
+                editor.apply();
                 final Intent intent = new Intent();
                 intent.setClass(DengluActivity.this, ZhuyeActivity.class);
                 startActivity(intent);

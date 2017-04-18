@@ -1,7 +1,11 @@
 package com.example.amos.youshi;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -20,6 +24,18 @@ public class ShezhiActivity extends BaseActivity {
         );
         ListView listView=(ListView)findViewById(R.id.list1);
         listView.setAdapter(adapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+                if(data[position]=="登录/切换用户") {
+                    Intent intent =new Intent(ShezhiActivity.this,DengluActivity.class);
+                    SharedPreferences.Editor editor=getSharedPreferences("data",MODE_PRIVATE).edit();
+                    editor.putBoolean("denglu",false);
+                    editor.apply();
+                    startActivity(intent);
+                }
+            }
+        });
 
         //设置返回点击监听事件
         super.ret_clicked(this);

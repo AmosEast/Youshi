@@ -19,53 +19,54 @@
 
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/linearLayout"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginLeft="26sp"
-        android:layout_marginStart="26sp"
-        android:layout_marginTop="32dp"
         android:weightSum="1"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true">
 
-        <Button
-            android:text="早餐"
-            android:layout_width="72dp"
-            android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:background="#ffffff"
-            android:textColor="#666666"
-            android:id="@+id/zaocan" />
+        <!--<Button-->
+            <!--android:text="早餐"-->
+            <!--android:layout_width="72dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="14sp"-->
+            <!--android:background="#ffffff"-->
+            <!--android:textColor="#666666"-->
+            <!--android:id="@+id/zaocan" />-->
 
-        <Button
-            android:text="午餐"
-            android:layout_width="64dp"
-            android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:background="#ffffff"
-            android:textColor="#666666"
-            android:id="@+id/wucan" />
+        <!--<Button-->
+            <!--android:text="午餐"-->
+            <!--android:layout_width="64dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="14sp"-->
+            <!--android:background="#ffffff"-->
+            <!--android:textColor="#666666"-->
+            <!--android:id="@+id/wucan" />-->
 
-        <Button
-            android:text="晚餐"
-            android:layout_width="65dp"
-            android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:textColor="#666666"
-            android:background="#ffffff"
-            android:id="@+id/wancan" />
+        <!--<Button-->
+            <!--android:text="晚餐"-->
+            <!--android:layout_width="65dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textColor="#666666"-->
+            <!--android:background="#ffffff"-->
+            <!--android:id="@+id/wancan" />-->
 
         <Spinner
-            android:layout_width="77dp"
-            android:layout_height="37dp"
-            android:layout_marginLeft="24dp"
-            android:id="@+id/spinner"
+            android:layout_width="188dp"
+            android:layout_height="49dp"
+            android:id="@+id/canshi"
+            android:entries="@array/canshi"
+            android:popupBackground="@android:color/background_light" />
+        <Spinner
+            android:layout_width="188dp"
+            android:layout_height="49dp"
+            android:id="@+id/mode"
             android:entries="@array/changes"
-            android:popupBackground="@android:color/background_light"
-            android:background="@drawable/moshi" />
+            android:popupBackground="@android:color/background_light" />
 
     </LinearLayout>
 

@@ -20,6 +20,8 @@ import java.util.List;
 
 public class ShiwuAdapter extends ArrayAdapter<Shiwu>{
     private int resourceId;
+    RemoteImageHelper lazyImageHelper = new RemoteImageHelper();
+
     public ShiwuAdapter(Context context, int textViewResourceId, List<Shiwu>objects){
         super(context, textViewResourceId, objects);
         resourceId=textViewResourceId;
@@ -31,7 +33,8 @@ public class ShiwuAdapter extends ArrayAdapter<Shiwu>{
         TextView shiwuName=(TextView)view.findViewById(R.id.name);
         ImageView shiwuImage=(ImageView)view.findViewById(R.id.imageView);
         TextView shiwuyingyang=(TextView)view.findViewById(R.id.yingyang);
-        shiwuImage.setImageResource(shiwu.getImageId());
+//        shiwuImage.setImageResource();
+        lazyImageHelper.loadImage(shiwuImage, shiwu.getImageURL(), false);
         shiwuName.setText(shiwu.getName());
         shiwuyingyang.setText(shiwu.getYingyang());
         return view;

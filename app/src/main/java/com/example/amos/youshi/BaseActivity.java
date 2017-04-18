@@ -28,7 +28,9 @@ import java.net.URL;
 import java.util.List;
 
 public class BaseActivity extends AppCompatActivity {
+//    protected String base_url = "http://192.168.1.112";
 
+    protected String base_url = "http://10.14.4.25";
     protected Handler handler = new Handler() {
 
         public void handleMessage(android.os.Message msg) {

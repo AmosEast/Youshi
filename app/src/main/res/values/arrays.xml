@@ -5,4 +5,9 @@
         <item>减脂 </item>
         <item>正常</item>
     </string-array>
+    <string-array name="canshi">
+        <item>早餐</item>
+        <item>午餐</item>
+        <item>晚餐</item>
+    </string-array>
 </resources>

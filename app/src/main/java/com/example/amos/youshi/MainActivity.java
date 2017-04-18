@@ -13,7 +13,7 @@ import android.view.Menu;
 
 public class MainActivity extends BaseActivity {
 
-    //private SharedPreferences editor;
+    private SharedPreferences editor;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,8 +24,9 @@ public class MainActivity extends BaseActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                boolean is_denglu = false;
-                //boolean is_denglu = editor.getBoolean("denglu",false);
+//                boolean is_denglu = false;'
+                editor = getSharedPreferences("data", MODE_PRIVATE);
+                boolean is_denglu = editor.getBoolean("denglu",false);
                 Intent intent = new Intent();
                 if(is_denglu) {
                     intent.setClass(MainActivity.this, ZhuyeActivity.class);

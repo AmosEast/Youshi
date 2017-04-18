@@ -38,7 +38,7 @@
         android:layout_marginTop="36dp"
         android:inputType="textPersonName"
         android:ems="10"
-        android:id="@+id/resetpwd_edit_name"
+        android:id="@+id/zhuce_user_name"
         android:hint="请输入您的用户名"
         android:textColorHint="#aaaaaa"
         android:background="#ffffff"
@@ -60,14 +60,14 @@
         android:layout_marginTop="8dp"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/resetpwd_edit_pwd_old"
+        android:id="@+id/zhuce_user_passwd"
         android:hint="请输入您的密码"
         android:textColorHint="#aaaaaa"
         android:background="#ffffff"
         android:textSize="24sp"
-        android:layout_below="@+id/resetpwd_edit_name"
-        android:layout_alignLeft="@+id/resetpwd_edit_name"
-        android:layout_alignStart="@+id/resetpwd_edit_name"
+        android:layout_below="@+id/zhuce_user_name"
+        android:layout_alignLeft="@+id/zhuce_user_name"
+        android:layout_alignStart="@+id/zhuce_user_name"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
@@ -78,13 +78,13 @@
         android:layout_marginTop="8dp"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/resetpwd_edit_pwd_new"
+        android:id="@+id/zhuce_user_passwd_re"
         android:layout_centerHorizontal="true"
         android:hint="请确认您的密码"
         android:textColorHint="#aaaaaa"
         android:textSize="24sp"
         android:background="#ffffff"
-        android:layout_below="@+id/resetpwd_edit_pwd_old" />
+        android:layout_below="@+id/zhuce_user_passwd" />
 
     <Button
         android:layout_width="fill_parent"
@@ -94,9 +94,9 @@
         android:textSize="24sp"
         android:id="@+id/sign_up_zhuce"
         android:background="#8bd2d8"
-        android:layout_below="@+id/resetpwd_edit_pwd_new"
-        android:layout_alignLeft="@+id/resetpwd_edit_pwd_new"
-        android:layout_alignStart="@+id/resetpwd_edit_pwd_new"
+        android:layout_below="@+id/zhuce_user_passwd_re"
+        android:layout_alignLeft="@+id/zhuce_user_passwd_re"
+        android:layout_alignStart="@+id/zhuce_user_passwd_re"
         android:layout_marginTop="8dp" />
 
 
